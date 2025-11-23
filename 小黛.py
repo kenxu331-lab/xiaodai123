@@ -7,14 +7,14 @@ class TipApp:
         self.single_window = None
         self.batch_windows = []
         self.tips = [
-            "熏利小姐，今晚月色正好，能允许我跟你一起作伴吗？",
-            "我和小熏是意定之人，你只会拥有更多的爱。",
-            "小熏，你怎么看着这么难过啊这可不合你‘豪迈’的时候，我们都应该是最好的样子啊。",
-            "我可以藏在你的影子里，住在你的眼眸中，可你接触世间万物时我与你形影随形，你的喜怒哀乐，我都会感同身受。",
-            "现在，只有你了，我最爱的女孩也在，看到金白色适合的人最将得到永远的爱。",
-            "传说中活在言语的廉价来临之际在廉价中，你会永远不会失去的爱情。所以，如果天空不给我一场流星雨，我便，自己下一场。",
-            "你活着，我是你的江声浩荡，若你离去，我是你的死水微澜。"
-        ]
+            "黛利拉小姐，今夜的夜色很美，能允许我与你跳一支舞吗？",
+            "我和小黛是意定之人，你只会拥有更多的爱。",
+            "小黛，你怎么看着那么难过呢?重逢的时候，我们都应该是最好的样子。",
+            "我可以藏在你的影子里，住在你的眼眸中，你接触世间万物时，我与你如影随形，你的喜怒哀乐，我都会感同身受。",
+            "现在，月色有了，我最爱的女孩也在，可是，怎么办，小黛和你在一起的时候，我总是贪得无厌。",
+            "传说在布雷诺春信来临之际，看到金色流星雨的人，将得到永不失去的爱情。所以，如果天空不给我们下一场流星雨，我便，自己下一场。。",
+            "你若活着，我是你的江声浩荡，若你离去，我是你的死水微澜。"                                                                                                                                                                                                                                                                                                                                          
+        ]                                                                                                                                                                                                                                                                                                                                                          ·
         self.bg_colors = [
             'lightpink', 'skyblue', 'lightgreen', 'lavender'
         ]
@@ -25,14 +25,13 @@ class TipApp:
         self.single_window.title("专属提示")
         # 窗口居中
         screen_w = self.single_window.winfo_screenwidth()
-        screen_h = self.single_window.winfo_screenheight()
         win_w = 600
         win_h = 180
         pos_x = (screen_w - win_w) // 2
         pos_y = (screen_h - win_h) // 2
         self.single_window.geometry(f"{win_w}x{win_h}+{pos_x}+{pos_y}")
         # 内容填充
-        tip = random.choice(self.tips)
+        tip = "你若活着，我是你的江声浩荡，若你离开，我是你的死水微澜。"
         bg = random.choice(self.bg_colors)
         # 标签
         tip_label = tk.Label(
