@@ -30,7 +30,7 @@ function showModal() {
 
   const content = document.createElement("div");
   content.className = "content";
-  content.textContent = "你若活着，我是你的江声浩荡，若你离开，我是你的死水微澜。";
+  content.textContent = "黛利拉小姐，今夜的夜色很美，能允许我与你跳一支舞吗？。";
   modal.appendChild(content);
 
   const actions = document.createElement("div");
