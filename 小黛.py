@@ -25,13 +25,14 @@ class TipApp:
         self.single_window.title("专属提示")
         # 窗口居中
         screen_w = self.single_window.winfo_screenwidth()
+        screen_h = self.single_window.winfo_screenheight()
         win_w = 600
         win_h = 180
         pos_x = (screen_w - win_w) // 2
         pos_y = (screen_h - win_h) // 2
         self.single_window.geometry(f"{win_w}x{win_h}+{pos_x}+{pos_y}")
         # 内容填充
-        tip = "你若活着，我是你的江声浩荡，若你离开，我是你的死水微澜。"
+        tip = "黛利拉小姐，今夜的夜色很美，能允许我与你跳一支舞吗？"
         bg = random.choice(self.bg_colors)
         # 标签
         tip_label = tk.Label(
